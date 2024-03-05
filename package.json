@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gen:types": "ts-node scripts/generate-schema-types.ts ./schemas",
-    "replace-cuid": "ts-node scripts/replace-cuid.ts ./playground"
+    "replace-cuid": "ts-node scripts/replace-cuid.ts",
+    "replace-cuid:playground": "ts-node scripts/replace-cuid.ts ./playground"
   },
   "author": "",
   "license": "ISC",
