@@ -1,0 +1,25 @@
+{
+  "name": "content-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen:types": "ts-node scripts/generate-schema-types.ts ./schemas",
+    "replace-cuid": "ts-node scripts/replace-cuid.ts ./playground"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "cuid": "^3.0.0",
+    "json-schema-to-typescript": "^13.1.2"
+  }
+}
