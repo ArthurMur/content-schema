@@ -1,5 +1,8 @@
 # yaml-language-server: $schema=../../../schemas/course.schema.json
 id: "{cuid}"
+thumbnail: "https://s3.timeweb.com/132514fc-images-staging/content/logo-react.svg"
+dependencies:
+  - "test-course-2"
 title: "Название курса"
 description: |
   ## Описание курса в формате Markdown:
