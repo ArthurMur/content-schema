@@ -8,32 +8,22 @@
       "$ref": "#/definitions/cuid"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 100
     },
     "description": {
       "type": "string"
     },
-    "thumbnail": {
-      "type": "string"
+    "shortDescription": {
+      "type": "string",
+      "maxLength": 400
     },
     "dependencies": {
       "type": "array",
       "items": {
         "type": "string",
-        "title": "Cuid"
+        "title": "LessonPath"
       }
-    },
-    "lessons": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/cuid"
-      }
-    }
-  },
-  "definitions": {
-    "cuid": {
-      "type": "string",
-      "title": "cuid"
     }
   }
 }
