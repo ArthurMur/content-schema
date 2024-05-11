@@ -18,12 +18,27 @@
       "type": "string",
       "maxLength": 400
     },
+    "thumbnail": {
+      "type": "string"
+    },
     "dependencies": {
       "type": "array",
       "items": {
         "type": "string",
-        "title": "LessonPath"
+        "title": "Cuid"
       }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/cuid"
+      }
+    }
+  },
+  "definitions": {
+    "cuid": {
+      "type": "string",
+      "title": "cuid"
     }
   }
 }
