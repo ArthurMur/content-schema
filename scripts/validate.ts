@@ -119,13 +119,15 @@ function watchYAMLFiles(relativePath: string) {
     ignoreInitial: false,
   });
 
-  scanDirectory(directory);
+  scanDirectory(directory).catch((e) => {
+    console.error(e);
+  });
   // Обработка при изменении файла
-  watcher.on("change", (file) => {
+  watcher.on("change", async (file) => {
     try {
-      scanDirectory(directory);
+      await scanDirectory(directory);
     } catch (error) {
-      console.error(`Ошибка при обновлении файла ${file}:`, error);
+      console.error(error);
     }
   });
 }
